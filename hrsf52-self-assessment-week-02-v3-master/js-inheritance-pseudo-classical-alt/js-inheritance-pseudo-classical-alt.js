@@ -46,7 +46,7 @@ Horse.prototype.goSomewhere = function(destination) {
 };
 
 var FlyingHorse = function(name, color) {
-  this.name = Horse.call(name);
+  Horse.call(this, name);
   this.color = color;
 };
 
